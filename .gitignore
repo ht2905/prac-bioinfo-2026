@@ -18,6 +18,7 @@ renv/python/
 # Ephemeral & large bioinformatics outputs
 .scratch/
 temp/
+*.log
 *.fastq
 *.fastq.gz
 *.fq
