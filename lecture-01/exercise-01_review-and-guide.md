@@ -52,7 +52,9 @@ This document reviews your existing answers (Tasks 01–03a), completes the rema
 
 #### **What we found:**
 
-[Screenshot: PubChem CID 969516 Biological Test Results summary and BioAssay Activity Table]
+![PubChem CID 969516 BioAssay Results sorted by Activity Value](screenshots/task-03b_pubchem-curcumin-bioassays.png)
+
+![PubChem CID 969516 BioAssay Results sorted by Activity Outcome showing Active hits](screenshots/task-03b_pubchem-curcumin-bioassays-active.png)
 
 From the PubChem BioAssay summary for `CID 969516`, curcumin has **6,114 bioassay test records** across **5,213 unique BioAssays (AIDs)**:
 
@@ -86,9 +88,9 @@ Key active bioassays and protein targets recorded for `CID 969516` include:
 
 #### **What we found:**
 
-[Screenshot: NCBI Nucleotide search results for "Human SIRT1" showing the RefSeq filter and top hits]
+[Manual screenshot needed (NCBI blocked by reCAPTCHA browser check): NCBI Nucleotide search results for "Human SIRT1" showing the RefSeq filter and top hits]
 
-[Screenshot: GenBank record view of NM_012238.5 showing Header, Features, and CDS]
+[Manual screenshot needed (NCBI blocked by reCAPTCHA browser check): GenBank record view of NM_012238.5 showing Header, Features, and CDS]
 
 Searching `"Human SIRT1"` directly in NCBI Nucleotide returns **826 results**. When sorted by relevance, the #1 result is actually a cloning vector (`KJ904690.1`, *Synthetic construct Homo sapiens clone ccsbBroadEn_14084 SIRT1 gene*, `1,797 bp`), mixed alongside partial GenBank cDNAs (`JQ768366.1`, `1,260 bp`), genomic sequences (`NG_050664.2`, `40,735 bp`), and three curated human RefSeq mRNA transcript variants (`NM_012238.5`, `NM_001142498.2`, `NM_001314049.2`).
 
@@ -117,9 +119,9 @@ We selected **`NM_012238.5`** as the primary reference record:
 
 #### **What we got from the search:**
 
-[Screenshot: UniProt search for "GLP1R1 human" showing 0 results]
+![UniProt search for "GLP1R1 human" showing 0 results](screenshots/task-05_uniprot-glp1r1-no-results.png)
 
-[Screenshot: UniProt search results for "GLP1R human" with P43220 (GLP1R_HUMAN) at the top]
+![UniProt search results for "GLP1R human" with P43220 (GLP1R_HUMAN) at the top](screenshots/task-05_uniprot-glp1r-search.png)
 
 Searching `"GLP1R1 human"` literally on UniProt returns **0 results**, because no human gene is named `GLP1R1`. In humans, the glucagon-like peptide 1 receptor gene symbol is **`GLP1R`** (matching Exercise 2, which also uses `GLP1R`), so `"GLP1R1"` in the prompt is a typo.
 
@@ -132,7 +134,13 @@ After correcting the query to **`GLP1R human`**, **`P43220` (`GLP1R_HUMAN`)** is
 
 #### **What we extracted from the results:**
 
-[Screenshot: UniProt entry P43220 overview, Function, and Names & Taxonomy sections]
+![UniProt entry P43220 overview and Function section](screenshots/task-05_uniprot-p43220-overview.png)
+
+![UniProt entry P43220 Organism names, Accessions, and Proteomes](screenshots/task-05_uniprot-p43220-names-taxonomy.png)
+
+![UniProt entry P43220 Sequence length and mass](screenshots/task-05_uniprot-p43220-sequence.png)
+
+![UniProt entry P43220 Structure PDB cross-references](screenshots/task-05_uniprot-p43220-structure.png)
 
 - **Protein name:** Glucagon-like peptide 1 receptor
 - **Short names:** `GLP-1 receptor`, `GLP-1-R`, `GLP-1R`
@@ -157,7 +165,7 @@ After correcting the query to **`GLP1R human`**, **`P43220` (`GLP1R_HUMAN`)** is
 
 #### **How to select the most suitable compound:**
 
-[Screenshot: PubChem search results for "Acetaminophen" highlighting Best Match CID 1983]
+![PubChem search results for "Acetaminophen" highlighting Best Match CID 1983](screenshots/task-06_pubchem-acetaminophen-search.png)
 
 - Choose the **Best Match** parent compound, **`CID 1983`**, which represents the neutral, single-component molecule rather than combination drugs (e.g., acetaminophen/hydrocodone) or salts.
 - Verify the primary name (`Acetaminophen`), CAS number (`103-90-2`), and standard synonyms (`Paracetamol`, `Tylenol`, `APAP`, `N-(4-Hydroxyphenyl)acetamide`).
@@ -165,7 +173,7 @@ After correcting the query to **`GLP1R human`**, **`P43220` (`GLP1R_HUMAN`)** is
 
 #### **What we found:**
 
-[Screenshot: PubChem CID 1983 Summary header and Biological Test Results / BioAssay table]
+[Manual screenshot needed (`pubchem.ncbi.nlm.nih.gov/compound/1983` timed out in the sandboxed browser): PubChem CID 1983 Summary header and Biological Test Results / BioAssay table]
 
 - **Chemical & drug-likeness properties (`CID 1983`):**
   - **IUPAC name:** `N-(4-hydroxyphenyl)acetamide`
@@ -200,9 +208,9 @@ After correcting the query to **`GLP1R human`**, **`P43220` (`GLP1R_HUMAN`)** is
 
 ### Exact screenshots to take for Tasks 03b–06
 
-| Task | URL & Search Steps | What to Capture |
-| :--- | :--- | :--- |
-| **Task 03b** (Curcumin BioAssays) | Open `https://pubchem.ncbi.nlm.nih.gov/compound/969516` -> click **Biological Test Results** in the right-hand Table of Contents. | 1) The BioAssay summary bar/pie counts (`Active`, `Inactive`, `Inconclusive`, `Unspecified`) and the first few rows of the **BioAssay Results** table showing target names and potencies (`µM`). |
-| **Task 04** (`Human SIRT1`) | Go to `https://www.ncbi.nlm.nih.gov/nuccore` -> search `Human SIRT1` -> optionally note total count, then check **RefSeq** under *Source databases* (left sidebar) -> click **`NM_012238.5`**. | 1) The search results page showing `KJ904690.1` vs `NM_012238.5` (with the left **RefSeq** filter visible).<br>2) The `NM_012238.5` GenBank page showing the top `LOCUS`/`DEFINITION`/`KEYWORDS` (`MANE Select`) and the `FEATURES` (`gene` + `CDS` `67..2310`, `NP_036370.2`) section. |
-| **Task 05** (`GLP1R1` / `GLP1R` human) | Go to `https://www.uniprot.org/` -> search `GLP1R1 human` first (optional proof) -> then search `GLP1R human` -> click **`P43220`** (`GLP1R_HUMAN`). | 1) Optional: the `0 results` page for `"GLP1R1 human"`.<br>2) The `"GLP1R human"` search list showing `P43220` (`Reviewed`, `Homo sapiens`, `463 aa`) at the top.<br>3) Inside `P43220`, capture the top summary header, **Function** section, and **Names & Taxonomy** / **Cross-references** (PDB/DrugBank) cards. |
-| **Task 06** (`Acetaminophen`) | Go to `https://pubchem.ncbi.nlm.nih.gov/` -> search `Acetaminophen` -> open **Best Match `CID 1983`** -> scroll to **Biological Test Results**. | 1) The search results card showing `CID 1983` as Best Match.<br>2) The `CID 1983` summary header (`C8H9NO2`, `151.16 g/mol`, CAS `103-90-2`, 2D structure).<br>3) The **Biological Test Results** summary chart and active BioAssay rows (e.g., `COX-1`/`COX-2`, `CA`, or `CYP` rows—use the `Active` filter pill in the table so active hits appear at the top). |
+| Task | URL & Search Steps | What to Capture | Capture Status & Files |
+| :--- | :--- | :--- | :--- |
+| **Task 03b** (Curcumin BioAssays) | Open `https://pubchem.ncbi.nlm.nih.gov/compound/969516` -> click **Biological Test Results** in the Table of Contents -> sort by **Activity Outcome - A to Z**. | 1) Section 18.1 BioAssay Results (`6,572 items`, `AC50` values in `µM`).<br>2) Top `Active` BioAssay rows (`AID 543`, `AID 505`, `AID 504`) showing target names. | **Captured:** `screenshots/task-03b_pubchem-curcumin-bioassays.png`, `screenshots/task-03b_pubchem-curcumin-bioassays-active.png` |
+| **Task 04** (`Human SIRT1`) | Go to `https://www.ncbi.nlm.nih.gov/nuccore` -> search `Human SIRT1` -> check **RefSeq** under *Source databases* (left sidebar) -> click **`NM_012238.5`**. | 1) The search results page showing `KJ904690.1` vs `NM_012238.5` (with the left **RefSeq** filter visible).<br>2) The `NM_012238.5` GenBank page showing the top `LOCUS`/`DEFINITION`/`KEYWORDS` (`MANE Select`) and the `FEATURES` (`gene` + `CDS` `67..2310`, `NP_036370.2`) section. | **Manual needed** (NCBI triggered a reCAPTCHA browser check) |
+| **Task 05** (`GLP1R1` / `GLP1R` human) | Go to `https://www.uniprot.org/` -> search `GLP1R1 human` -> then search `GLP1R human` -> click **`P43220`** (`GLP1R_HUMAN`). | 1) The `0 results` page for `"GLP1R1 human"`.<br>2) The `"GLP1R human"` search list showing `P43220` (`Reviewed`, `Homo sapiens`, `463 aa`) at the top.<br>3) Inside `P43220`: overview/Function, Names & Taxonomy, Sequence (`53,026 Da`), and Structure (PDB table). | **Captured (complete):** `screenshots/task-05_uniprot-glp1r1-no-results.png`, `screenshots/task-05_uniprot-glp1r-search.png`, `screenshots/task-05_uniprot-p43220-overview.png`, `screenshots/task-05_uniprot-p43220-names-taxonomy.png`, `screenshots/task-05_uniprot-p43220-sequence.png`, `screenshots/task-05_uniprot-p43220-structure.png` |
+| **Task 06** (`Acetaminophen`) | Go to `https://pubchem.ncbi.nlm.nih.gov/` -> search `Acetaminophen` -> open **Best Match `CID 1983`** -> scroll to **Biological Test Results**. | 1) The search results card showing `CID 1983` as Best Match.<br>2) The `CID 1983` summary header (`C8H9NO2`, `151.16 g/mol`, CAS `103-90-2`, 2D structure).<br>3) The **Biological Test Results** section sorted by `Activity Outcome - A to Z` so active hits appear at the top. | **Partial:** `screenshots/task-06_pubchem-acetaminophen-search.png` captured; **manual needed** for `CID 1983` summary & BioAssays (`/compound/1983` timed out in the sandboxed browser) |
