@@ -1,0 +1,28 @@
+[project]
+name = "prac-bioinfo-2026"
+version = "0.1.0"
+description = "Local bioinformatics automation suite for BT338IU Practice in Bioinformatics"
+requires-python = ">=3.11"
+dependencies = [
+  "biopython>=1.84",
+  "matplotlib>=3.9",
+  "numpy>=2.0",
+  "openpyxl>=3.1",
+  "requests>=2.32",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3",
+  "ruff>=0.8",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,38 @@
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# R / renv
+renv/library/
+renv/local/
+renv/staging/
+renv/python/
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Ephemeral & large bioinformatics outputs
+.scratch/
+temp/
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sra
+*.sam
+*.bam
+*.bam.bai
+*.ht2
+genome_index/
+star_index/
+salmon_index/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.~lock.*#
+.vscode/
