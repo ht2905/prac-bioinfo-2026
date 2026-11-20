@@ -15,22 +15,92 @@ renv/python/
 .Ruserdata
 .Rproj.user/
 
-# Ephemeral & large bioinformatics outputs
+# Ephemeral, temp & logs
 .scratch/
 temp/
+.tmp/
 *.log
+*.aria2
+
+# Raw & trimmed sequencing reads / SRA
 *.fastq
 *.fastq.gz
+*.fastq.bz2
 *.fq
 *.fq.gz
+*.fq.bz2
 *.sra
+*.sra.cache
+*.sralite
+*.ncbi_enc
+fastq/
+sra/
+trimmed/
+
+# Reference genomes, annotations & aligner indices
+*.fna
+*.fna.gz
+*.fa
+*.fa.gz
+*.fasta.gz
+*.fai
+*.dict
+*.gtf
+*.gtf.gz
+*.gff
+*.gff.gz
+*.gff3
+*.gff3.gz
+*.bed.gz
+*.bigBed
+*.bb
+*.bigWig
+*.bw
+*.ht2
+*.ht2l
+*_bundle.zip
+ncbi_dataset/
+ref/
+genome_index/
+star_index/
+star_idx/
+salmon_index/
+salmon_idx/
+hisat2_idx*
+
+# Alignments, variants & GEO caches
 *.sam
 *.bam
 *.bam.bai
-*.ht2
-genome_index/
-star_index/
-salmon_index/
+*.bai
+*.cram
+*.crai
+*.csi
+*.bcf
+*.vcf.gz
+*.tbi
+align/
+geo_cache/
+
+# Large volumetric grids, binary data objects & archives
+*.dx
+*.dx.gz
+*.pdb.gz
+*.cif.gz
+*.h5
+*.h5ad
+*.hdf5
+*.loom
+*.rds
+*.rda
+*.tar
+*.tar.gz
+*.tgz
+*.tar.bz2
+*.tar.xz
+*.bz2
+*.xz
+*.zst
 
 # OS / editors
 .DS_Store
