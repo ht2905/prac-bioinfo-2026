@@ -1,0 +1,13 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR24376031_1_paired	/home/ht2905/projects/prac-bioinfo-2026/homework/week-01/qc-group-04/fastqc-trimmed/SRR24376031_1_paired_fastqc.zip
+FastQC	all_sections	SRR24376031_2_paired	/home/ht2905/projects/prac-bioinfo-2026/homework/week-01/qc-group-04/fastqc-trimmed/SRR24376031_2_paired_fastqc.zip
+FastQC	all_sections	SRR24376032_1_paired	/home/ht2905/projects/prac-bioinfo-2026/homework/week-01/qc-group-04/fastqc-trimmed/SRR24376032_1_paired_fastqc.zip
+FastQC	all_sections	SRR24376032_2_paired	/home/ht2905/projects/prac-bioinfo-2026/homework/week-01/qc-group-04/fastqc-trimmed/SRR24376032_2_paired_fastqc.zip
+FastQC	all_sections	SRR24376033_1_paired	/home/ht2905/projects/prac-bioinfo-2026/homework/week-01/qc-group-04/fastqc-trimmed/SRR24376033_1_paired_fastqc.zip
+FastQC	all_sections	SRR24376033_2_paired	/home/ht2905/projects/prac-bioinfo-2026/homework/week-01/qc-group-04/fastqc-trimmed/SRR24376033_2_paired_fastqc.zip
+FastQC	all_sections	SRR24376034_1_paired	/home/ht2905/projects/prac-bioinfo-2026/homework/week-01/qc-group-04/fastqc-trimmed/SRR24376034_1_paired_fastqc.zip
+FastQC	all_sections	SRR24376034_2_paired	/home/ht2905/projects/prac-bioinfo-2026/homework/week-01/qc-group-04/fastqc-trimmed/SRR24376034_2_paired_fastqc.zip
+FastQC	all_sections	SRR24376035_1_paired	/home/ht2905/projects/prac-bioinfo-2026/homework/week-01/qc-group-04/fastqc-trimmed/SRR24376035_1_paired_fastqc.zip
+FastQC	all_sections	SRR24376035_2_paired	/home/ht2905/projects/prac-bioinfo-2026/homework/week-01/qc-group-04/fastqc-trimmed/SRR24376035_2_paired_fastqc.zip
+FastQC	all_sections	SRR24376036_1_paired	/home/ht2905/projects/prac-bioinfo-2026/homework/week-01/qc-group-04/fastqc-trimmed/SRR24376036_1_paired_fastqc.zip
+FastQC	all_sections	SRR24376036_2_paired	/home/ht2905/projects/prac-bioinfo-2026/homework/week-01/qc-group-04/fastqc-trimmed/SRR24376036_2_paired_fastqc.zip

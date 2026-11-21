@@ -1,0 +1,15 @@
+Status	qc-group-04/align/SRR24376031.sorted.bam	qc-group-04/align/SRR24376032.sorted.bam	qc-group-04/align/SRR24376033.sorted.bam	qc-group-04/align/SRR24376034.sorted.bam	qc-group-04/align/SRR24376035.sorted.bam	qc-group-04/align/SRR24376036.sorted.bam
+Assigned	8304353	6549109	8591692	6719084	6357956	7196372
+Unassigned_Unmapped	21463	16315	31612	18989	22953	24748
+Unassigned_Read_Type	0	0	0	0	0	0
+Unassigned_Singleton	134788	99709	94579	71990	94051	78597
+Unassigned_MappingQuality	0	0	0	0	0	0
+Unassigned_Chimera	34909	5736	5535	3376	4277	5426
+Unassigned_FragmentLength	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0
+Unassigned_MultiMapping	572437	147096	326054	176746	234949	285156
+Unassigned_Secondary	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0
+Unassigned_NoFeatures	219509	139932	244602	162751	175669	207607
+Unassigned_Overlapping_Length	0	0	0	0	0	0
+Unassigned_Ambiguity	314437	199294	232450	206733	172372	197355
