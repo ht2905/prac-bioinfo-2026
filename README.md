@@ -15,6 +15,8 @@ prac-bioinfo-2026/
 ├── renv.lock                                  # Locked R / Bioconductor environment
 ├── docs/
 │   └── workflow-automation_master-plan.md     # Lecture-by-lecture execution playbook
+├── homework/                                  # Weekly homework QC, trimming, and count deliverables
+├── prelab/                                    # Pre-lab preparation notes, figures, and assignments
 ├── references/
 │   ├── lab-manual.pdf                         # Official 74-page BT338IU lab manual
 │   ├── lab-manual_overview.md                 # Structured summary of tools & workload
